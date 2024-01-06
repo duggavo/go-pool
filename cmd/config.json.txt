@@ -1,0 +1,41 @@
+// This is the example pool configuration for Monero Testnet
+{
+	"log_level": 2,
+	"daemon_rpc": "http://127.0.0.1:38081",
+	"atomic": 12,
+	"min_confs": 60,
+	"block_time": 120,
+	"addr_prefix": [24],
+	"subaddr_prefix": [36],
+	"pool_address": "52BcqNgukVFADFGiSXC4139GFpYGzwXRLBZ4RcyUrEev4LhxKP1GPJDhiADD3iiGZS1dNLKaS7wai98yKkr9wNKVDeK4v8F",
+	"fee_address": "59yUhDexLFL1qANvGLAVdPBbJehc3hEmtAQvDw5nVhptG3UpxX2j1PNdu79qQTXkSCCm7iuCWS64jNoW25crWAfHRCuGMTc",
+	"use_p2pool": false,
+	"p2pool_address": "127.0.0.1:3333",
+	"master_pass": "enter a secure password here",
+	"algo_name": "rx/0",
+	"master_config": {
+		"listen_address": "0.0.0.0:8412",
+		"wallet_rpc": "http://127.0.0.1:18084",
+		"fee_percent": 5,
+		"api_port": 1521,
+		"withdrawal_fee": 0.05,
+		"withdrawal_interval_minutes": 360,
+		"min_withdrawal": 1,
+		"stratums": [
+			{
+				"addr": "pool.example.com:3151",
+				"desc": "an example stratum address (stratums are display-only - sent in the API)",
+				"tls": false
+			}
+		]
+	},
+	"slave_config": {
+		"master_address": "127.0.0.1:8412",
+		"min_diff": 2000,
+		"share_target_time": 30,
+		"trust_score": 50,
+		"pool_port": 3121,
+		"pool_port_tls": 3122,
+		"template_timeout": 30
+	}
+}

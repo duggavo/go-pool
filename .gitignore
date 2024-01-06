@@ -1,0 +1,8 @@
+build
+0_testingstuff
+cmd/master/master
+cmd/master/pool.db
+cmd/master/stats.json
+cmd/slave/slave
+cmd/slave/cert.pem
+cmd/slave/key.pem
